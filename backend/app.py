@@ -93,7 +93,6 @@ def generate_performance_report(avg_fps, avg_map, crowd_performance, lighting_pe
     - Improve model robustness by training with diverse datasets including crowded and low-light scenes.
     - Consider using higher-performing hardware if FPS is too low for real-time requirements.
     """
-    # print(report)  
     with open('./data/performance_report.txt', 'w') as f:
         f.write(report)
 
