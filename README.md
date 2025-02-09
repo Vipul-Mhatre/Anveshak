@@ -1,7 +1,7 @@
 
 ---
 
-# An AI-Powered Multi-Modal Surveillance System  
+# Anveshak :- An AI-Powered Multi-Modal Surveillance System  
 *Adaptive Alerts and Digital Twin Simulation for Modern Security*
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/yourusername/yourrepo)  
