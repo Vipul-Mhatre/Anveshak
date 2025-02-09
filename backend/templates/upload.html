@@ -1,25 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload Video for Detection</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
-
-<div class="container">
-    <h1 class="mt-4">Upload Video for Inspection</h1>
-    <hr>
-
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        <div class="form-group">
-            <label for="video">Choose Video File:</label>
-            <input type="file" class="form-control-file" id="video" name="video" accept="video/*" required>
+{% extends "base.html" %}
+{% block content %}
+<section class="content">
+  <div class="container-fluid">
+    <div class="row mt-4">
+      <div class="col-md-6 offset-md-3">
+        <div class="card card-primary">
+          <div class="card-header">
+            <h3 class="card-title">Upload Video</h3>
+          </div>
+          <form action="/upload" method="post" enctype="multipart/form-data">
+            <div class="card-body">
+              <div class="form-group">
+                <label for="video">Select Video File</label>
+                <input type="file" name="video" id="video" class="form-control" required>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button type="submit" class="btn btn-primary">Upload</button>
+            </div>
+          </form>
         </div>
-        <button type="submit" class="btn btn-primary">Upload</button>
-    </form>
-</div>
-
-</body>
-</html>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
