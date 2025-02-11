@@ -82,14 +82,15 @@ Below is a diagram of the system architecture generated using Mermaid (ensure yo
 
 ```mermaid
 flowchart TD
-    A[Video Feed] --> B[Object Detection<br>(YOLOv8)]
-    A --> C[Feature Extraction<br>(ViT)]
+    A[Video Feed] --> B["Object Detection \n (YOLOv8)"]
+    A --> C["Feature Extraction \n (ViT)"]
     B --> D[Multi-Modal Fusion]
     C --> D
     D --> E[Digital Twin Simulation]
     E --> F[Adaptive Alert System]
     F --> G[Flask API / Video Feed]
     F --> H[Streamlit Dashboard]
+
 ```
 
 ---
