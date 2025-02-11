@@ -90,7 +90,6 @@ flowchart TD
     E --> F[Adaptive Alert System]
     F --> G[Flask API / Video Feed]
     F --> H[Streamlit Dashboard]
-
 ```
 
 ---
@@ -116,18 +115,22 @@ flowchart TD
   - **Behavioral Patterns:** Analyzes motion trajectories and object displacements.
   - **Environmental Metrics:** Considers lighting, crowd density, and other factors.
 - **Risk Aggregation Models:**  
-  - **Simple Additive Weighting (SAW):**  
-    $$
-    R_{\text{SAW}} = w_{\text{threat}} \cdot R_{\text{threat}} + w_{\text{behavior}} \cdot R_{\text{behavior}} + w_{\text{environment}} \cdot R_{\text{environment}}
-    $$
-  - **Weighted Product Model (WPM):**  
-    $$
-    R_{\text{WPM}} = R_{\text{threat}}^{w_{\text{threat}}} \times R_{\text{behavior}}^{w_{\text{behavior}}} \times R_{\text{environment}}^{w_{\text{environment}}}
-    $$
-- **Overall Risk Computation:**  
-  $$
+
+  **Simple Additive Weighting (SAW):**
+  ```math
+  R_{\text{SAW}} = w_{\text{threat}} \cdot R_{\text{threat}} + w_{\text{behavior}} \cdot R_{\text{behavior}} + w_{\text{environment}} \cdot R_{\text{environment}}
+  ```
+
+  **Weighted Product Model (WPM):**
+  ```math
+  R_{\text{WPM}} = R_{\text{threat}}^{w_{\text{threat}}} \times R_{\text{behavior}}^{w_{\text{behavior}}} \times R_{\text{environment}}^{w_{\text{environment}}}
+  ```
+
+- **Overall Risk Computation:**
+  ```math
   R_{\text{overall}} = \lambda \cdot \max\{ R_{\text{SAW}}, R_{\text{WPM}} \} + (1-\lambda) \cdot R_{\text{frame}}
-  $$
+  ```
+
 - **Adaptive Thresholding:**  
   Updates the alert threshold dynamically based on LSTM-based predictions and historical alert data.
 
@@ -136,9 +139,9 @@ flowchart TD
 - **Modalities:** Combines visual, audio, and thermal signals.
 - **Feature Fusion:**  
   - Normalizes and fuses features from different modalities using a weighted sum:
-    $$
-    \mathbf{F}_{\text{fused}} = w_v \cdot \text{normalize}(\mathbf{F}_v) + w_a \cdot \text{normalize}(\mathbf{F}_a) + w_t \cdot \text{normalize}(\mathbf{F}_t)
-    $$
+  ```math
+  \mathbf{F}_{\text{fused}} = w_v \cdot \text{normalize}(\mathbf{F}_v) + w_a \cdot \text{normalize}(\mathbf{F}_a) + w_t \cdot \text{normalize}(\mathbf{F}_t)
+  ```
 - **Benefits:** Enhances scene understanding and improves anomaly detection accuracy.
 
 ---
@@ -280,6 +283,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - **Scalability:** Optimize the system for deployment in large-scale, real-world surveillance applications.
 
 ---
+```
 
-
-
+---
