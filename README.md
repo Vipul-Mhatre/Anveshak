@@ -176,7 +176,7 @@ flowchart TD
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/yourrepo.git
+   git clone https://github.com/Vipul-Mhatre/Anveshak.git
    cd yourrepo
    ```
 
@@ -267,11 +267,22 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
+# Project Name
+
 ## Contact and Contribution Guidelines
 
-- **Project Lead:** Your Name (your.email@institution.edu)
-- **Contributions:** Contributions are welcome! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contribute.
-- **Issues:** For bugs or feature requests, please open an issue in the GitHub repository.
+- **Project Team:**
+  - **Vipul Mhatre** – [https://github.com/Vipul-Mhatre]
+  - **Ronit Mehta** – [https://github.com/Ronit26Mehta]
+  - **Jsh Agrawal** – [https://github.com/Jsh-Agarwal]
+  - **Ankush Pandey** – [https://github.com/Ankush2201]
+  - **Priyanshi Jain** – [https://github.com/priknowsit]
+
+- **Contributions:**  
+  Contributions are welcome! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contribute.
+
+- **Issues:**  
+  For bugs or feature requests, please open an issue in the GitHub repository.
 
 ---
 
